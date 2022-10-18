@@ -1,12 +1,20 @@
-addEventListener(`DOMContentLoaded`,()=>{ 
-    // #9Realizar el algoritmo que lea N números, calcule y escriba la suma de los pares y el producto de los impares. Numero par es aquel que su residuo igual a cero (num mod !=0)
-    let par =0
-    let impa=0
-    while(confirm(`desea ingresar un numero`)){
-        let num=Number(prompt(`dijite un numero`))
-        eval(`${(num%2==0)?"par+=num": "impa*=num"}`);
-    }
-    alert(`la suma de los pares es :${par}\nEl producto de los impares es: ${impa}`)
+addEventListener(`DOMContentLoaded`,()=>{
+    // # DEFINIR VARIABLES NUEMRIAS
+    // # DATOS DE ENTRADA
+    // ## OPERACIONES BASICAS: + /
+    let prod1=Number(prompt(`coloque el valor del producto:`))
+    let prod2=Number(prompt(`coloque el valor del producto:`))
+    let prod3=Number(prompt(`coloque el valor del producto:`))
+    let prod4=Number(prompt(`coloque el valor del producto:`))
+    let prod5=Number(prompt(`coloque el valor del producto:`))
 
-
+    // #PROCESOS U OPERACIONES
+    let tol=(prod1+prod2+prod3+prod4+prod5)
+    let iva=Number(prompt(`coloque el valor del iva:`))
+    let vaiva=tol*iva
+    let res=tol+vaiva
+    // #salida o entrada de resultado
+    alert(`valor del producto con el iva: ${res}` )
+    alert(`el sub valor es de : ${tol}`)
+    alert(`valor del iva: ${vaiva}` ) 
 })
