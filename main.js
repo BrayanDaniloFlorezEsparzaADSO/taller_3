@@ -1,20 +1,23 @@
 addEventListener(`DOMContentLoaded`,()=>{
-    // # DEFINIR VARIABLES NUEMRIAS
-    // # DATOS DE ENTRADA
-    // ## OPERACIONES BASICAS: + /
-    let prod1=Number(prompt(`coloque el valor del producto:`))
-    let prod2=Number(prompt(`coloque el valor del producto:`))
-    let prod3=Number(prompt(`coloque el valor del producto:`))
-    let prod4=Number(prompt(`coloque el valor del producto:`))
-    let prod5=Number(prompt(`coloque el valor del producto:`))
+    // #11Programa para solicitar el nombre, apellido, edad y la nota promedio de 5 estudiantes de un curso de computación.
+    // // #ENTRADA DE DATOS
+    let nombre= prompt(`ingrese su nombre:`)
+    let apellido= prompt(`ingrese su apellido:`)
+    let edad= prompt(`ingrese su eddad:`)
 
-    // #PROCESOS U OPERACIONES
-    let tol=(prod1+prod2+prod3+prod4+prod5)
-    let iva=Number(prompt(`coloque el valor del iva:`))
-    let vaiva=tol*iva
-    let res=tol+vaiva
-    // #salida o entrada de resultado
-    alert(`valor del producto con el iva: ${res}` )
-    alert(`el sub valor es de : ${tol}`)
-    alert(`valor del iva: ${vaiva}` ) 
+    let not1=int(input(`dijite su nota 1:`))
+    let not2=int(input(`dijite su nota 2:`))
+    let not3=int(input(`dijite su nota 3:`))
+    let not4=int(input(`dijite su nota 4:`))
+    let not5=int(input(`dijite su nota 5:`))
+
+    let prom=(not1+not2+not3+not4+not5)/5
+    if (prom >=5){
+        alert(`aprobaado`)
+    }
+
+    else{
+        alert(`no aprobado`)
+    }
+    alert(`promedio de las notas :`&{prom})  
 })
