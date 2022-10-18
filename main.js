@@ -1,11 +1,19 @@
 addEventListener(`DOMContentLoaded`,()=>{
-    //     #5Escriba un algoritmo que calcule el área de un rectángulo siempre y cuando los lados sean positivos
-    // #entrada de datos 
-    let area=Number(prompt(` coloque el area de un triangulo:`))
-    if (area>0){
-        let res=(area*area)
-      alert(`el area de el rectangulo es de :${res}`)
+    //     #6Considere dos variables llamadas temperatura y presión. Escriba una sentencia if-else que muestre en pantalla la palabra Alarma si la variable presión es mayor a 200 o si la variable temperatura es mayor a 100. En caso contrario, se debe mostrar en pantalla la palabra Normal.
+    // #ENTRADA DE DATOS
+    let temperatura=Number(prompt(`coloque la temperatura`))
+    let precion=Number(prompt(`coloque la precion`))
+    // #proceso
+    if (precion>200){
+         alert(`ALERTA EN LA PRECION:,${precion}`)
     }else{
-        alert(`escriba un valor positivo`)
+        alert(`NORMAL EN LA PRECION:,${precion}`)
+    
     }
+    if (temperatura>100){
+        alert(`ALERTA EN LA TEMPERATURA:${temperatura}`)
+    }else{
+        alert(`NORMALEN LA TEMPERATURA:${temperatura}`)    
+    }
+    
 })
