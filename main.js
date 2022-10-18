@@ -1,15 +1,20 @@
 addEventListener(`DOMContentLoaded`,()=>{
-    // #Calcular todos los pagos hechos de un restaurante y que si el consumo ingresado excede los$130.000 el descuento será del 15%, de lo contrario no hay descuento.
+    // #8En cierta empresa se les paga a sus trabajadores de la siguiente forma: si el empleado es de planta, la hora trabajada se le paga a $20000, si el empleado es administrativo, la hora trabajada se le paga a $10000. Para calcular su pago es necesario conocer el total de horas trabajadas.
     // #ENTRADA DE DATOS
-    let pago1=Number(prompt("dijite el valor total a pagar"))
-    let desc=0.15
+    trabajador=(prompt("dijite la (p) si es trabajador de planta, dijite la (a) si es trabajador administrativo:"))
     // #proceso
-    if (pago1 >=130000){
-        let res1=pago1*desc
-        let res2=pago1-res1
-        alert(`su valor total con el 15% de descuento es de: ${res2}`)
-    }else{
-        alert(`no tiene el 15% de descuento ya que no cumplio con la cuota del restaurante`)
-        alert(`el valor a pagar es de: ${pago1}`)
+    if (trabajador== "p"){
+        let horas=Number(prompt("dijte cunatas horas a trabajado en el dia laboral:"))
+        let res=horas*20000
+        alert(`total de horas trabajadas ${horas}`)
+        alert(`su pado es de :${res} `)
+    }else if (trabajador =="a"){
+        let horas=Number(prompt(`dijte cunatas horas a trabajado en el dia laboral:`))
+        let res=horas*10000
+        alert(`total de horas trabajadas: ${horas}`)
+        alert(`su pado es de :$ ${res}`)
     }
+
+
+
 })
